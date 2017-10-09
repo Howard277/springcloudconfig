@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+# 设置配置存储在gitlab，配置gitlab的用户名和密码
+spring.cloud.config.server.git:
+  uri: 'https://github.com/Howard277/cloud.git'
+  username: Howard277
+  password: wuketao277
+
+# 配置安全，只有输入用户名和密码后才能访问。用户名这里就是user，密码会在日志中打印出来。
+# security:
+#  user: 
+#  password: 000
