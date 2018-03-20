@@ -4,3 +4,4 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888/	#配置中心地址
+      profile: ${config.profile:dev} #默认的profile为dev
